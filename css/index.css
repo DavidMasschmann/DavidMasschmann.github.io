@@ -1,22 +1,22 @@
-*{
+* {
 	box-sizing: border-box;
  }
 
-body{
+body {
 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	background-color: #121212 !important;
 	color: rgba(255, 255, 255, 0.87);
 }
 
-header{
+header {
 	background-color: rgba(255, 255, 255, 0.09);
 	height: 3em;
 	color: #87FCAA;
 	margin-bottom: 1em;
 }
 
-header h1{
+header h1 {
 	font-size: 2em;
 	display:inline-block;
 	vertical-align:	middle;	
@@ -26,25 +26,19 @@ h2 {
 	color: rgba(255, 255, 255, 0.87);
 }
 
-header .d_container:before{
+header .d_container:before {
 	content: '';
 	display:inline-block;
 	height: 100%;
 	vertical-align:	middle;
 }
 
-/* .d_container{
-	width: 60%;
-	height: 100%;
-	margin: 0 auto 2em;
-} */
-
-section{
+section {
 	margin: 2em 0;
 	overflow: hidden;
 }
 
-section h2{
+section h2 {
 	font-size: 3em;
 	display: block;
 	padding-bottom: .5em;
@@ -52,7 +46,7 @@ section h2{
 	margin-bottom: .5em;
 }
 
-table{
+table {
 	width: 100%;
 	margin-bottom : .5em;
     table-layout: fixed;
@@ -71,20 +65,20 @@ td {
 	background-color: rgba(255, 255, 255, 0.05);
 }
 
-th{
+th {
 	font-weight: bold;
 	color: rgba(255, 255, 255, 0.87);
 	background-color: rgba(255, 255, 255, 0.11);
 }
 
-label{
+label {
 	color: rgba(255, 255, 255, 0.6);
 	display: block;
 	margin-bottom: .2em;
 	letter-spacing: 0.05em;
 }
 
-.field{
+.field {
 	margin: 0 0 12px 0;
 	padding-bottom: 1em;
 	width: 100%;
@@ -108,7 +102,7 @@ label{
 	margin-bottom: 0.5em;
 }
 
-button{
+button {
 	padding: .5em;
 	border: 0;
 	border-bottom: 3px solid;
@@ -126,7 +120,7 @@ button{
     margin: 10px 0px;
 }
 
-button:active{
+button:active {
 	margin-top: 12px;
 	border: 0;
 }
@@ -137,15 +131,15 @@ button[disabled=disabled], button:disabled {
 
 }
 
-.add_patient{
+.add_patient {
     margin-top: 30px;
 }
 
-.invalid_field{
+.invalid_field {
 	border: 1px solid red;
 }
 
-.invalid_patient{
+.invalid_patient {
     background-color: #A72B23;
 	color: white;
 }

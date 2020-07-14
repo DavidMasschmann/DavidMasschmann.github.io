@@ -5,7 +5,7 @@ function bmi_calculator (weight, height) {
 }
 
 function weight_validation(weight) {
-    if (weight > 0 && weight < 1000) {
+    if (weight > 0 && weight < 500) {
         return true;
     } else {
         return false;

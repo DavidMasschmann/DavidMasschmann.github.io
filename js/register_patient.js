@@ -36,30 +36,26 @@ function assemble_td (info, html_class) {
 function patient_validation(patient) {
     let errors = [];
 
-    if (patient.name.length == 0) {
+    if (patient.nome.length == 0) {
         errors.push("Name field can't be blank");
     }
 
-    if (patient.body_fat.length == 0) {
+    if (patient.gordura.length == 0) {
         errors.push("Body Fat field can't be blank");
     }
 
-    if (patient.weight.length == 0) {
+    if (patient.peso.length == 0) {
         errors.push("Weight field can't be blank");
-    }
-
-    if (patient.height.length == 0) {
-        errors.push("Height field can't be blank");
-    }
-
-    if (!height_validation(patient.height)) {
+    } else if (!height_validation(patient.altura)) {
         errors.push("Height is invalid");
     }
 
-    if (!weight_validation(patient.weight)) {
+    if (patient.altura.length == 0) {
+        errors.push("Height field can't be blank");
+    } else if (!weight_validation(patient.peso)) {
         errors.push("Weight is invalid");
     }
-
+    
     return errors;
 }
 
@@ -80,12 +76,12 @@ function add_patient_to_table(patient) {
     table.append(patient_tr);
 }
 
-let add_button = document.querySelector("#add_patient");
+let add_button = document.getElementById("add_patient");
 
 add_button.addEventListener("click", function(){
     event.preventDefault();
     
-    let form = document.querySelector("#form");
+    let form = document.getElementById("form");
 
     let patient = get_patient_from_form(form);
 
