@@ -1,0 +1,165 @@
+*{
+	box-sizing: border-box;
+ }
+
+body{
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	background-color: #121212 !important;
+	color: rgba(255, 255, 255, 0.87);
+}
+
+header{
+	background-color: rgba(255, 255, 255, 0.09);
+	height: 3em;
+	color: #87FCAA;
+	margin-bottom: 1em;
+}
+
+header h1{
+	font-size: 2em;
+	display:inline-block;
+	vertical-align:	middle;	
+}
+
+h2 {
+	color: rgba(255, 255, 255, 0.87);
+}
+
+header .d_container:before{
+	content: '';
+	display:inline-block;
+	height: 100%;
+	vertical-align:	middle;
+}
+
+/* .d_container{
+	width: 60%;
+	height: 100%;
+	margin: 0 auto 2em;
+} */
+
+section{
+	margin: 2em 0;
+	overflow: hidden;
+}
+
+section h2{
+	font-size: 3em;
+	display: block;
+	padding-bottom: .5em;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: .5em;
+}
+
+table{
+	width: 100%;
+	margin-bottom : .5em;
+    table-layout: fixed;
+	color: rgba(255, 255, 255, 0.6);
+	letter-spacing: 0.05em;
+}
+
+td, th {
+	padding: .7em;
+	margin: 0;
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	text-align: center;
+}
+
+td {
+	background-color: rgba(255, 255, 255, 0.05);
+}
+
+th{
+	font-weight: bold;
+	color: rgba(255, 255, 255, 0.87);
+	background-color: rgba(255, 255, 255, 0.11);
+}
+
+label{
+	color: rgba(255, 255, 255, 0.6);
+	display: block;
+	margin-bottom: .2em;
+	letter-spacing: 0.05em;
+}
+
+.field{
+	margin: 0 0 12px 0;
+	padding-bottom: 1em;
+	width: 100%;
+	border: 1px solid #4d4d4d;
+	padding: .7em;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.08);
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.field::placeholder {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.field:focus {
+	background-color: #262626;
+}
+
+.search_field {
+	background-color: rgba(255, 255, 255, 0.16);
+	margin-bottom: 0.5em;
+}
+
+button{
+	padding: .5em;
+	border: 0;
+	border-bottom: 3px solid;
+	font-size: 1.2em;
+	font-weight: 600;
+	cursor: pointer;
+	margin:  0;
+	margin-top: -3px;
+	color: rgba(0, 0, 0, 0.87);
+	background-color:#87FCAA;
+	border-color: #00B536;
+	width: 20%;
+    display: block;
+    clear: both;
+    margin: 10px 0px;
+}
+
+button:active{
+	margin-top: 12px;
+	border: 0;
+}
+
+button[disabled=disabled], button:disabled {
+    background-color: gray;
+	border-color: darkgray;
+
+}
+
+.add_patient{
+    margin-top: 30px;
+}
+
+.invalid_field{
+	border: 1px solid red;
+}
+
+.invalid_patient{
+    background-color: #A72B23;
+	color: white;
+}
+
+#error-messages {
+	color: #CF6679;
+	letter-spacing: 0.1em;
+}
+
+.fadeOut {
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.hide {
+	display: none;
+}
